@@ -11,8 +11,6 @@ import {
   checkIfGameOver,
 } from "../store/gameReducer";
 
-//ejbisagas@gmailcom
-
 const gridCells = [
   {
     id: 0,
@@ -114,7 +112,7 @@ const MainGame = () => {
 
   const handleClickCell = (id, imgId, randomPoints) => {
     dispatch(showCell({ id, imgId, randomPoints }));
-    console.log(imgId);
+    // console.log(imgId);
     if (firstClickedCell) {
       dispatch(preventClickCell());
 
